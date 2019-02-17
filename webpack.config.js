@@ -3,13 +3,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: {
-        index: path.resolve(__dirname,'./src/index.js'),
+        index: path.resolve(__dirname, 'src/index.js'),
     },
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname,'./dist'),
+        path: path.resolve(__dirname, 'dist'),
     },
-    module:{
+    module: {
         rules:[
             {
                 test: /\.css$/,
@@ -26,7 +26,6 @@ module.exports = {
                         name: 'images/[name].[ext]?[hash]'
                     }
                 }
-                
             }
         ]
     },
