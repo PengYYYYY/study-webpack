@@ -1,13 +1,14 @@
 const path = require("path");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
     entry: {
-        index: path.resolve(__dirname,'./src/index.js'),
+        app: path.resolve(__dirname,'../src/index.js'),
     },
     output: {
-        filename: 'bundle.js',
-        path: path.resolve(__dirname,'./dist'),
+        filename: '[name].[hash].js',
+        path: path.resolve(__dirname,'../dist'),
     },
     module:{
         rules:[
@@ -21,10 +22,6 @@ module.exports = {
                 test: /\.(png|svg|jpg|gif)$/,
                 use:{
                     loader:'url-loader',
-                    options: {
-                        limit: 8192,
-                        name: 'images/[name].[ext]?[hash]'
-                    }
                 }
                 
             }
@@ -33,6 +30,9 @@ module.exports = {
     plugins:[
         new HtmlWebpackPlugin({
             title:'WebpackTest'
-        })
-    ]
+        }),
+        new CleanWebpackPlugin(['dist'],{
+            root: path.resolve(__dirname,'../'),
+        }),
+    ],
 }
