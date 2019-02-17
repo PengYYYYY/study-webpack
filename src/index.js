@@ -1,22 +1,9 @@
-import "./style.css"
-import imgUrl from "./img.png"
+import Vue from 'vue'
+import App from './views/APP'
+import './style'
 
-function createComponent(){
-    var element = document.createElement('div');
-    element.innerHTML = ['hello webpack'];
-    return element;
 
-    
-}
-function createImg(){
-    var imgBox = document.createElement('img');
-    imgBox.src = imgUrl;
-    return imgBox;
-}
-
-document.body.append(createComponent(),createImg());
-
-const es6Component= (a)=>{
-    console.log(a)
-}
-es6Component(1)
+new Vue({
+    el:'#root',
+    render: h => h(App)
+})

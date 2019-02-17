@@ -8,7 +8,7 @@ module.exports = merge(base ,{
     devServer:{
         compress: true, //启用压缩
         port: 1207,     //端口
-        open: true,      //自动打开浏览器
+        open: false,      //自动打开浏览器
         hot: true
     },
     plugins:[
