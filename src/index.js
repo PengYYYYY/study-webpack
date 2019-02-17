@@ -15,3 +15,8 @@ function createImg(){
 }
 
 document.body.append(createComponent(),createImg());
+
+const es6Component= (a)=>{
+    console.log(a)
+}
+es6Component(1)

@@ -1,0 +1,4 @@
+{
+    "presets": ["@babel/preset-env"], 
+    "plugins": ["@babel/plugin-transform-runtime"] // transform-runtime 插件表示不管浏览器是否支持ES6，只要是ES6的语法，它都会进行转码成ES5
+}
