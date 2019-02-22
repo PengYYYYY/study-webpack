@@ -1,6 +1,6 @@
 <template>
     <div>
-        <img src="../img.png" alt="">
+        <img src="../asset/img.png" alt="">
         <p>一起学习前端吧</p>
     </div>
 </template>

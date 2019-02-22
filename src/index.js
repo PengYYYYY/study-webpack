@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import App from './views/APP'
-import './style'
-
+import '@/asset/style'
 
 new Vue({
     el:'#root',

@@ -14,7 +14,7 @@ module.exports = {
     resolve: {
         extensions: [ '.js', '.vue', '.scss', '.css'], //后缀名自动补全
         alias: {
-            'Vue': 'vue/dist/vue.js'
+            '@': path.resolve(__dirname, '../src'),
         }
     },
     module:{
