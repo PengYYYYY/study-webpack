@@ -230,6 +230,11 @@ module.exports = {
 
 运行`npm run dev`会自动打开浏览器，并访问http://localhost:8080(默认端口,如8080端口被占用会依此类推)。
 
+## github
+代码在我的[github仓库](https://github.com/super-YUE/webpakcStudy)step1分支。
+
 ## END
 
 至此，我们就可以算是对webpack4.0入了个门。我们写出了一个简易的webpackdemo，大致了解了webpack进行打包处理，如何使用loader，如何使用插件，如何安装webpack-dev-server以便于在开发中使用。当然webpack的世界远不止于此，还有更多的内容等着我们去了解。
+
+更多内容到另一篇文章[《webpack4.0+vue+es6配置》](https://juejin.im/post/5c68f4e9e51d454be11473b9#heading-2)
